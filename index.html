@@ -22,6 +22,10 @@
   .sub{font-size:1.15rem;color:#4a544e;margin:0 0 26px}
   .heroimg{border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(20,33,28,.18)}
   .heroimg img{width:100%;display:block}
+  figure.ba{position:relative;margin:0;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(20,33,28,.16)}
+  figure.ba img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
+  figure.ba .tag{position:absolute;left:0;bottom:0;width:100%;padding:11px 14px;margin:0;color:#fff;font-weight:700;font-size:.92rem;background:linear-gradient(transparent,rgba(10,20,15,.72))}
+  figure.ba .tag.before{color:#ffd9b3}
   .trust{margin-top:14px;color:#6b746e;font-size:.9rem}
   section{padding:64px 0;border-top:1px solid var(--line)}
   h2{font-size:1.9rem;margin:0 0 8px;letter-spacing:-.3px}
@@ -68,7 +72,7 @@
     <div class="trust">Built for plumbers, electricians, HVAC, landscapers, painters.
     No app to learn. You talk, we type.</div>
   </div>
-  <div class="heroimg"><img src="assets/hero-van-dusk.jpg" alt="plumber photographing a job site"></div>
+  <div class="heroimg"><img src="assets/hero-under-sink.jpg" alt="plumber photographing the plumbing under an open sink cabinet"></div>
 </div></div>
 
 <section id="how"><div class="wrap">
@@ -100,12 +104,14 @@
 </div></div></section>
 
 <section><div class="wrap">
-  <h2>From your camera roll to “book me”</h2>
-  <p class="lead">The same photos already sitting in your phone become your
-  marketing — we clean them up and write the post. Neighbors find you that way.</p>
+  <h2>Before → after, from the same phone</h2>
+  <p class="lead">You photograph the problem before you start and the result
+  when you're done. Text them both in — FieldDesk posts the pair for you,
+  captions written, tagged to your service area. That's how neighbors find
+  you: they see exactly what you fix.</p>
   <div class="demo">
-    <div class="heroimg"><img src="assets/van-driveway.jpg" alt="work van in a suburban driveway at sunset"></div>
-    <div class="heroimg"><img src="assets/bathroom-after.jpg" alt="finished bathroom remodel ready to post"></div>
+    <figure class="ba"><img src="assets/bathroom-before.jpg" alt="before: dated bathroom with grimy grout and tarnished faucet"><figcaption class="tag before">before — the job as you found it</figcaption></figure>
+    <figure class="ba"><img src="assets/bathroom-after.jpg" alt="after: the same bathroom freshly completed"><figcaption class="tag after">after — what the homeowner shows their friends</figcaption></figure>
   </div>
 </div></section>
 
