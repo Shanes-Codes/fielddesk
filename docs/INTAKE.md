@@ -17,8 +17,9 @@ Speed IS the product (the 5-minute rule research is our own pitch).
 3. Run fielddesk_invoice.py -> invoice PNG + follow-up text + social caption.
 4. Deliver: invoice image + "here's the follow-up text and a post for the job
    too — all yours to keep, paid or not."
-5. THE CLOSE (one message, no pressure-stack): "$129/mo, unlimited jobs,
-   first 30 days cancel-anytime. Want the number to start sending jobs to?"
+5. THE CLOSE (one message, no pressure-stack): "Founding rate $89 a month,
+   billed for a quarter - $267 today. Only 10 of these exist; after that
+   it is $129. Want one of the ten?"
 6. Payment via link when owner has set it up; until then: reply YES = deal,
    owner invoices manually the first month.
 7. LOG every lead in docs/LEADS.md (date, channel, stage, outcome).

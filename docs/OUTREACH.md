@@ -15,7 +15,7 @@ Subject: your invoices after 6pm
 > Want a real one for free? Text or reply with one photo from a past job and
 > we'll do it tonight. No card, no demo call, no pressure.
 >
-> — [owner name], FieldDesk · $129/mo, cancel in 30 days anytime
+> — [owner name], FieldDesk · founding rate $89/mo billed 3 months ($267), only 10 seats, cancel in 30 days anytime
 > [street address] · reply "no thanks" and you won't hear from us again
 
 ## Messenger (short, since inbound is free to reply to)
