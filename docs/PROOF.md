@@ -3,6 +3,7 @@
 |---|---|
 | Voice memo -> real invoice in minutes | Live email (photo+.wav) -> whisper int8 transcript -> estimate $1058.85 + invoice $1004.55 PNG/PDF, tenant-named files, /tmp/firstjob-real2/ |
 | Two different trades priced correctly | Riverbend Plumbing $977.40; Desert Line Air HVAC $746.08 (quote=invoice) - one profile schema |
+| Not one-job lucky | Kitchen drain $390.96 from a fresh memo (r85): invoice + follow-up + social caption + before/after pair now IN the live marketing demo as story 2 - two unrelated jobs, one machine, same night |
 | Bilingual customer follow-ups | Natural LatAm ES drafts verified on live job ("Gracias por su confianza, Rosa...") |
 | Google Business posts (crew tier) | 247-char homeowner post emitted per job, engine-verified |
 | Inbox robot can't lie about money | factcheck() vs faq ground truth; night stats: 0 fact-suspects / 7 graded triages; spam silent; CANCEL draft == account-page promise verbatim |
