@@ -1,0 +1,15 @@
+Paste these two lines just before </body> on your website (or send this file to whoever built your site - it takes them under a minute):
+
+<script>window.FIELDDESK_CONFIG = {
+  email: "YOU@YOURSHOP.com",
+  phone: "4805551234",
+  color: "#14584a",
+  cta: "Free quote in 60 seconds",
+  greeting: "We answer faster than the big guys. Tell us the job:",
+  services: ["leaks", "drains", "water heaters", "repipes"]
+};</script>
+<script src="https://fielddesk.us/assets/widget/embed.js"></script>
+
+That's it. Leads arrive by email/text to you AND to FieldDesk, so our desk
+can back you up the second you're under a sink. Setup included with your seat -
+we'll do this paste for you free if you'd rather not touch code.
