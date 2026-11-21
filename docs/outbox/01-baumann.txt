@@ -1,3 +1,4 @@
+SEND-RULE v2 (DKIM lesson 2026-11-21): first touch = plain text, ONE plain-text mention of fielddesk.us max, no html, no tracking, one recipient per send; prefer Cloudflare relay (hello@fielddesk.us, domain DKIM) once live - fielddeskhq Gmail is the interim fallback only.
 TO: baumannfamplumbing@gmail.com | CHANNEL: email | STATUS: awaiting owner OK
 SUBJECT: paperwork off your desk by tonight (Clint?)
 
