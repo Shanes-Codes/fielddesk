@@ -6,6 +6,7 @@
   var green = C.color || "#14584a";
   var btn = document.createElement("button");
   btn.textContent = C.cta || "Get a fast quote";
+  btn.setAttribute("aria-label", (C.cta || "Get a fast quote") + " - open quote form");
   btn.style.cssText = "position:fixed;bottom:20px;right:20px;z-index:99999;background:" + green +
     ";color:#fff;border:none;border-radius:24px;padding:13px 18px;font:700 14px system-ui;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25)";
   var panel = document.createElement("div");
@@ -13,11 +14,11 @@
   var services = (C.services || ["a repair"]).map(function (s) { return "<option>" + s + "</option>"; }).join("");
   panel.innerHTML = '<div style="background:' + green + ';color:#fff;padding:12px 14px;border-radius:14px 14px 0 0;font-weight:700">' +
     (C.greeting || "Free quote in 60 seconds") + '</div><div style="padding:14px">' +
-    '<input id="fd-name" placeholder="Your name" style="width:100%;padding:9px;margin-bottom:8px;border:1px solid #ddd;border-radius:8px">' +
-    '<input id="fd-phone" placeholder="Phone" style="width:100%;padding:9px;margin-bottom:8px;border:1px solid #ddd;border-radius:8px">' +
-    '<select id="fd-job" style="width:100%;padding:9px;margin-bottom:8px;border:1px solid #ddd;border-radius:8px">' + services + '</select>' +
-    '<textarea id="fd-msg" rows="2" placeholder="What\'s going on?" style="width:100%;padding:9px;margin-bottom:10px;border:1px solid #ddd;border-radius:8px"></textarea>' +
-    '<button id="fd-send" style="width:100%;background:' + green + ';color:#fff;border:none;border-radius:8px;padding:11px;font-weight:700;cursor:pointer">Send it</button>' +
+    '<input id="fd-name" aria-label="Your name" placeholder="Your name" style="width:100%;padding:9px;margin-bottom:8px;border:1px solid #ddd;border-radius:8px">' +
+    '<input id="fd-phone" aria-label="Phone number" placeholder="Phone" style="width:100%;padding:9px;margin-bottom:8px;border:1px solid #ddd;border-radius:8px">' +
+    '<select id="fd-job" aria-label="Type of job" style="width:100%;padding:9px;margin-bottom:8px;border:1px solid #ddd;border-radius:8px">' + services + '</select>' +
+    '<textarea id="fd-msg" aria-label="What is going on" rows="2" placeholder="What\'s going on?" style="width:100%;padding:9px;margin-bottom:10px;border:1px solid #ddd;border-radius:8px"></textarea>' +
+    '<button id="fd-send" aria-label="Send quote request" style="width:100%;background:' + green + ';color:#fff;border:none;border-radius:8px;padding:11px;font-weight:700;cursor:pointer">Send it</button>' +
     '<p style="margin-top:8px;font-size:.85rem;color:#555;text-align:center">or <a id="fd-sms" style="color:' + green + ';font-weight:700" href="#">text this instead</a> (opens your messages)</p>' +
     '</div>';
   function wire() {
