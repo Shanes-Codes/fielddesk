@@ -18,10 +18,11 @@
     '<select id="fd-job" style="width:100%;padding:9px;margin-bottom:8px;border:1px solid #ddd;border-radius:8px">' + services + '</select>' +
     '<textarea id="fd-msg" rows="2" placeholder="What\'s going on?" style="width:100%;padding:9px;margin-bottom:10px;border:1px solid #ddd;border-radius:8px"></textarea>' +
     '<button id="fd-send" style="width:100%;background:' + green + ';color:#fff;border:none;border-radius:8px;padding:11px;font-weight:700;cursor:pointer">Send it</button>' +
-    '<p id="fd-alt" style="display:none;margin-top:10px;font-size:.85rem;color:#555">Or just <a id="fd-sms" style="color:' + green + ';font-weight:700" href="#">text us the same thing</a>.</p>' +
+    '<p style="margin-top:8px;font-size:.85rem;color:#555;text-align:center">or <a id="fd-sms" style="color:' + green + ';font-weight:700" href="#">text this instead</a> (opens your messages)</p>' +
     '</div>';
   function wire() {
     btn.onclick = function () { panel.style.display = panel.style.display === "none" ? "block" : "none"; };
+    panel.querySelector("#fd-sms").href = "sms:" + (C.phone || "").replace(/[^0-9]/g, "");
     panel.querySelector("#fd-send").onclick = function () {
       var name = panel.querySelector("#fd-name").value || "(no name)";
       var phone = panel.querySelector("#fd-phone").value || "(no phone)";
@@ -34,7 +35,6 @@
       var shopPhone = (C.phone || "").replace(/[^0-9]/g, "");
       if (shopEmail) { window.location.href = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body); }
       var sms = "Quote request: " + name + ", " + job + " - " + msg + " (call me: " + phone + ")";
-      panel.querySelector("#fd-alt").style.display = "block";
       panel.querySelector("#fd-sms").href = "sms:" + shopPhone + "?body=" + encodeURIComponent(sms);
       panel.querySelector("#fd-send").textContent = "Sent - they get it instantly";
     };
