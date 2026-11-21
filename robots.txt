@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /widget-demo.html
+Disallow: /marketing-demo.html
+Disallow: /replydesk-demo.html
+Sitemap: https://fielddesk.us/sitemap.xml
