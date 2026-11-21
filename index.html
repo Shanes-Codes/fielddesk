@@ -37,7 +37,7 @@
   section{padding:64px 0;border-top:1px solid var(--line)}
   h2{font-size:1.9rem;margin:0 0 8px;letter-spacing:-.3px}
   .lead{color:#4a544e;margin:0 0 36px;max-width:640px}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.steps.steps-4{grid-template-columns:repeat(2,1fr)}
   .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
   .num{display:inline-block;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;text-align:center;line-height:34px;margin-bottom:12px}
   .card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:#4a544e;font-size:.95rem}
@@ -59,7 +59,7 @@
   .form input,.form textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #bcd3c6;font:inherit;background:#fff;color:var(--ink)}
   .note{font-size:.85rem;color:#b8cfc2}
   footer{padding:34px 0 44px;color:#6b746e;font-size:.9rem;border-top:1px solid var(--line)}
-  @media(max-width:820px){.hero,.demo{grid-template-columns:1fr}.steps{grid-template-columns:1fr}h1{font-size:2rem}}
+  @media(max-width:820px){.hero,.demo{grid-template-columns:1fr}.steps{grid-template-columns:1fr}h1{font-size:2rem}header nav a:not(.btn){display:none}header .wrap{gap:12px}}
 </style>
 </head>
 <body>
@@ -132,7 +132,7 @@
   <h2>One system, lead to paid</h2>
   <p class="lead">Most tools do one slice. FieldDesk closes the whole loop for a one- or two-truck shop -
   and it all runs off the same profile we set up for you in one evening.</p>
-  <div class="steps" style="margin-top:26px">
+  <div class="steps steps-4" style="margin-top:26px">
     <div class="step"><h3>Get found</h3><p>A quote widget on your website answers the 9pm homeowner instantly and texts you the lead. <a href="/widget-demo.html" style="color:var(--green);font-weight:700">Try the live demo &rarr;</a></p></div>
     <div class="step"><h3>Never miss</h3><p>Calls and emails get answered the same minute - by the system, approved where it matters by a human. <a href="/replydesk-demo.html" style="color:var(--green);font-weight:700">See the 9pm save &rarr;</a></p></div>
     <div class="step"><h3>Win &amp; get paid</h3><p>Twenty seconds of talking in the truck becomes an estimate on site, an invoice at night, follow-ups automatic. <a href="#demo" style="color:var(--green);font-weight:700">See a real sample &rarr;</a></p></div>
